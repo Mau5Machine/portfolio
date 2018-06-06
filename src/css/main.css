@@ -120,12 +120,15 @@ li {
 a:visited,
 a:hover {
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+  outline: none; }
 
 button:visited,
 button:hover,
 button:active,
-button:link {
+button:link,
+button:focus {
+  outline: none;
   text-decoration: none; }
 
 /*------------- HEADER ----------------------------*/
@@ -161,6 +164,11 @@ button:link {
   border: none; }
 
 /*===== MAIN STARTS HERE ==========*/
+#news li {
+  background: #2C004F;
+  color: white;
+  border: .5px solid gray; }
+
 /*------ IMAGE SLIDER -------*/
 .flexslider {
   background: none; }
