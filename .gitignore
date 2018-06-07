@@ -3,3 +3,8 @@ package-lock.json
 node_modules/
 gulpfile.js
 *.txt
+src/css/fontawesome.css
+src/js/jquery-3.3.1.js
+src/css/flexslider.css
+src/js/jquery.flexslider.js
+src/css/hover.css

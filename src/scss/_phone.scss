@@ -1,24 +1,37 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 
 /*  apply a natural box layout model to all elements  */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 /* ----------------------------GLOBAL---------------------------------------*/
+
 #wrapper {
   background: $bgColor;
   border-top: 4px solid black;
 }
+
 li {
   color: $secondaryColor;
   list-style-type: none;
 }
+
 a:visited,
 a:hover {
-    color: white;
-    text-decoration: none;
-    outline: none;
+  color: white;
+  text-decoration: none;
+  outline: none;
 }
+
 button:visited,
 button:hover,
 button:active,
@@ -29,17 +42,19 @@ button:focus {
 }
 
 // Come back to add effects to hover
-
 /*------------- HEADER ----------------------------*/
+
 #header {
   padding-bottom: 0;
 }
+
 #brand-name {
   font-family: $scriptFont;
   font-weight: $boldWeight;
 }
 
 /*------------- NAVIGATION --------------------*/
+
 .nav-links li {
   font-size: 20px;
   font-family: $pFont;
@@ -53,8 +68,9 @@ button:focus {
     text-decoration: none;
   }
 }
+
 .navbar-toggler:visited,
-.navbar-toggler:hover, 
+.navbar-toggler:hover,
 .navbar-toggler {
   color: white;
   background: $bgColor;
@@ -64,33 +80,67 @@ button:focus {
   display: block;
   border: none;
 }
+
 /*===== MAIN STARTS HERE ==========*/
-#news li {
-  background: #2C004F;
-  color: white;
-  border: .5px solid gray;
+// First snippet of news grids
+.content {
+  display: grid;
+  min-height: 300px;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 150px 290px;
+  grid-row-gap: 15px;
+  background: $secondaryColor;
 }
+
+.news, .vacation, .updates, .resources h3 {
+  font-family: $headFont;
+  color: white;
+}
+.news, .vacation, .updates p {
+  color: white;
+  font-family: $pFont;
+  font-size: 1.2em;
+}
+// Construction piece goes here
+.content2 {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+.updates {
+  padding-bottom: 20px;
+  color: white;
+  flex-basis: 100%;
+  background: $secondaryColor;
+  img {
+    float: right;
+  }
+}
+// Resources piece goes here
+.content3 {
+  display: flex;
+  width: 100%;
+  flex-flow: center;
+  flex-direction: column;
+  background: $secondaryColor;
+  justify-content: space-around;
+}
+.resources {
+  text-align: center;
+  flex-basis: 50%;
+  color: white;
+}
+.rscimg {
+  margin: auto;
+}
+
 /*------ IMAGE SLIDER -------*/
+
 .flexslider {
   background: none;
 }
+
 .slides {
   background: none;
   border: none;
 }
-/*============MAIN CONTENT===========*/
-.content {
-  margin: $gutter;
-  h3 {
-    font-size: 2em;
-    color: $secondaryColor;
-  }
-  li {
-    color: white;
-    font-size: 1.3em;
-    padding: 10px;
-    border: 1px solid white;
-    box-shadow: 0px 4px 8px #888888;
-    margin-bottom: 20px;
-  }
-}  

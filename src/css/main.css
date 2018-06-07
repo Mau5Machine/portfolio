@@ -164,10 +164,51 @@ button:focus {
   border: none; }
 
 /*===== MAIN STARTS HERE ==========*/
-#news li {
-  background: #2C004F;
+.content {
+  display: grid;
+  min-height: 300px;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 150px 290px;
+  grid-row-gap: 15px;
+  background: #595494; }
+
+.news, .vacation, .updates, .resources h3 {
+  font-family: "Rambla", sans-serif;
+  color: white; }
+
+.news, .vacation, .updates p {
   color: white;
-  border: .5px solid gray; }
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em; }
+
+.content2 {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%; }
+
+.updates {
+  padding-bottom: 20px;
+  color: white;
+  flex-basis: 100%;
+  background: #595494; }
+  .updates img {
+    float: right; }
+
+.content3 {
+  display: flex;
+  width: 100%;
+  flex-flow: center;
+  flex-direction: column;
+  background: #595494;
+  justify-content: space-around; }
+
+.resources {
+  text-align: center;
+  flex-basis: 50%;
+  color: white; }
+
+.rscimg {
+  margin: auto; }
 
 /*------ IMAGE SLIDER -------*/
 .flexslider {
@@ -176,20 +217,6 @@ button:focus {
 .slides {
   background: none;
   border: none; }
-
-/*============MAIN CONTENT===========*/
-.content {
-  margin: 2%; }
-  .content h3 {
-    font-size: 2em;
-    color: #595494; }
-  .content li {
-    color: white;
-    font-size: 1.3em;
-    padding: 10px;
-    border: 1px solid white;
-    box-shadow: 0px 4px 8px #888888;
-    margin-bottom: 20px; }
 
 @media only screen and (min-width: 560px) {
   /*------------------------------Main--------------------------------------*/ }
