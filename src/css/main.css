@@ -172,11 +172,16 @@ button:focus {
   grid-row-gap: 15px;
   background: #595494; }
 
-.news, .vacation, .updates, .resources h3 {
+.news,
+.vacation,
+.updates,
+.resources h3 {
   font-family: "Rambla", sans-serif;
   color: white; }
 
-.news, .vacation, .updates p {
+.news,
+.vacation,
+.updates p {
   color: white;
   font-family: "Raleway", sans-serif;
   font-size: 1.2em; }

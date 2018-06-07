@@ -82,6 +82,7 @@ button:focus {
 }
 
 /*===== MAIN STARTS HERE ==========*/
+
 // First snippet of news grids
 .content {
   display: grid;
@@ -92,21 +93,29 @@ button:focus {
   background: $secondaryColor;
 }
 
-.news, .vacation, .updates, .resources h3 {
+.news,
+.vacation,
+.updates,
+.resources h3 {
   font-family: $headFont;
   color: white;
 }
-.news, .vacation, .updates p {
+
+.news,
+.vacation,
+.updates p {
   color: white;
   font-family: $pFont;
   font-size: 1.2em;
 }
+
 // Construction piece goes here
 .content2 {
   display: flex;
   flex-direction: row-reverse;
   width: 100%;
 }
+
 .updates {
   padding-bottom: 20px;
   color: white;
@@ -116,6 +125,7 @@ button:focus {
     float: right;
   }
 }
+
 // Resources piece goes here
 .content3 {
   display: flex;
@@ -125,11 +135,13 @@ button:focus {
   background: $secondaryColor;
   justify-content: space-around;
 }
+
 .resources {
   text-align: center;
   flex-basis: 50%;
   color: white;
 }
+
 .rscimg {
   margin: auto;
 }
