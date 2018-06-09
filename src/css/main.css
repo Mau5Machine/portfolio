@@ -164,13 +164,23 @@ button:focus {
   border: none; }
 
 /*===== MAIN STARTS HERE ==========*/
+.intro-container {
+  background: url("http://afkdeveloper.com/images/main/black-abstract.png");
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  box-shadow: 3px 5px 15px black;
+  display: flex;
+  justify-content: center; }
+
 .content {
+  margin-top: 3em;
   display: grid;
   min-height: 300px;
   grid-template-columns: 25% 75%;
   grid-template-rows: 150px 290px;
   grid-row-gap: 15px;
-  background: #595494; }
+  background: #373276; }
 
 .news,
 .vacation,
@@ -195,33 +205,72 @@ button:focus {
   padding-bottom: 20px;
   color: white;
   flex-basis: 100%;
-  background: #595494; }
+  background: #373276; }
   .updates img {
     float: right; }
 
 .content3 {
   display: flex;
   width: 100%;
-  flex-flow: center;
   flex-direction: column;
-  background: #595494;
-  justify-content: space-around; }
+  background: #373276;
+  justify-content: center; }
 
 .resources {
   text-align: center;
   flex-basis: 50%;
   color: white; }
 
-.rscimg {
-  margin: auto; }
+.tools-grid {
+  padding: 20px;
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 100px 100px 100px 100px;
+  min-height: 430px;
+  justify-content: center;
+  background: black;
+  box-shadow: 3px 5px 15px gray;
+  border-radius: 10px; }
 
-/*------ IMAGE SLIDER -------*/
-.flexslider {
-  background: none; }
+.tools {
+  align-items: center; }
 
-.slides {
-  background: none;
-  border: none; }
+.tools-desc {
+  color: white;
+  font-family: "Raleway", sans-serif; }
+
+.footer {
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 2.2em;
+  padding-top: 3em;
+  justify-content: center; }
+
+.fa-facebook {
+  color: #3b5998; }
+
+.fa-instagram {
+  color: #517fa8; }
+
+.fa-youtube {
+  color: #bb0000; }
+
+.fa-linkedin {
+  color: #030303; }
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-youtube:hover,
+.fa-linkedin:hover,
+.fa-at:hover {
+  color: #d5d5d5; }
+
+.footer a {
+  font-size: 2rem;
+  padding: 1rem; }
 
 @media only screen and (min-width: 560px) {
   /*------------------------------Main--------------------------------------*/ }
