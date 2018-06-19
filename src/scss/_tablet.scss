@@ -1,2 +1,27 @@
-/*------------------------------Main--------------------------------------*/
+#header {
+    padding-bottom: 0;
+  }
+  
+  #brand-name {
+    font-family: $scriptFont;
+    font-weight: $boldWeight;
+  }
+  
+/*===== MAIN STARTS HERE ==========*/
 
+// Intro begins here
+.intro-container {
+    width: 50%;
+    box-shadow: 3px 5px 15px black;
+    display: flex;
+    justify-content: space-around;
+    background: #959595;
+    img {
+      min-width: 100%;
+      height: 380px;
+    }
+  }
+  #bgvid {
+    width: 100%;
+    height: 200px;
+  }
