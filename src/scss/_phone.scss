@@ -13,16 +13,18 @@ html {
   box-sizing: border-box;
 }
 
-/* ----------------------------GLOBAL---------------------------------------*/
-
-#wrapper {
-  background: $bgColor;
-  border-top: 4px solid black;
+html body {
+  background: black;
 }
 
+/* ----------------------------GLOBAL---------------------------------------*/
+
 li {
-  color: $secondaryColor;
   list-style-type: none;
+}
+
+a {
+  color: white;
 }
 
 a:visited,
@@ -44,13 +46,23 @@ button:focus {
 // Come back to add effects to hover
 /*------------- HEADER ----------------------------*/
 
-#header {
-  padding-bottom: 0;
+#bgvid {
+  position: fixed;
+  top: 800;
+  left: 50%;
+  min-width: 100%;
+  min-height: 60%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
 }
 
-#brand-name {
-  font-family: $scriptFont;
-  font-weight: $boldWeight;
+.container h1 {
+  color: white;
 }
 
 /*------------- NAVIGATION --------------------*/
@@ -64,96 +76,170 @@ button:focus {
   margin-top: 1.2em;
   a:visited,
   a:hover {
-    color: white;
     text-decoration: none;
   }
 }
 
-.navbar-toggler:visited,
-.navbar-toggler:hover,
-.navbar-toggler {
+.nav a {
   color: white;
-  background: $bgColor;
-  position: relative;
-  width: 50px;
-  margin: 0 auto;
-  display: block;
-  border: none;
+}
+
+.navbar-toggle,
+.icon-bar {
+  color: black;
+}
+
+.navbar {
+  background: transparent;
+  width: 100%;
+}
+
+.navbar-brand {
+  color: white;
+  font-family: $scriptFont;
+  text-shadow: 5px 5px 5px black;
+}
+
+.fa-caret-square-down {
+  color: white;
+  text-shadow: 5px 5px 5px black;
 }
 
 /*===== MAIN STARTS HERE ==========*/
-// Intro begins here
-.intro-container {
-  width: 100%;
-  display: flex;
-  
-}
-#bgvid {
-  justify-self: center;
-  width: 100%;
-  height: 200px;
-}
 
 // First snippet of news grids
 .content {
+  width: 100%;
   margin-top: 3em;
   display: grid;
   min-height: 300px;
   grid-template-columns: 100%;
-  grid-template-rows: 800px 300px;
+  grid-template-rows: 700px 300px;
   grid-row-gap: 15px;
-  background: $bgColor;
 }
-.news {
- box-shadow: 0px 7px 10px black;
- border-radius: 5%;
- padding: 8px;
- 
- h2 {
-   text-align: center;
-   font-family: $scriptFont;
-   text-shadow: 3px 3px 5px black;
-   color: white;
-   font-size: 3em;
-   padding-bottom: 20px;
- }
- 
- img {
-   display: block;
-   margin: auto;
-   width: 200px;
- }
-}
-/*===========PROJECTS SECTION HERE====================*/
-.resources,
-.tools,
-.equipment {
 
+.news {
   h2 {
     text-align: center;
-   font-family: $scriptFont;
-   text-shadow: 3px 3px 5px black;
-   color: white;
-   font-size: 3em;
-   padding-bottom: 20px;
+    font-family: $scriptFont;
+    text-shadow: 3px 3px 5px black;
+    color: white;
+    font-size: 3em;
+    padding-bottom: 20px;
+  }
+  p {
+    background: rgba(0, 0, 0, 0.685);
+    padding: 16px;
+    border-radius: 10%;
+    box-shadow: 5px 5px 10px black;
+  }
+  img {
+    display: block;
+    margin: auto;
+    width: 200px;
   }
 }
 
-.news,
-.vacation,
-.updates {
-  font-family: $headFont;
+/*===========PROJECTS SECTION HERE====================*/
+
+.resources {
+  background: $bgColor;
+  padding: 15px;
+  height: 400px;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 5%;
+}
+
+.tools {
+  margin-top: 200px;
+  background: url("http://afkdeveloper.com/images/main/tools-wallpaper.png");
+  background-position: center;
+  border-radius: 5%;
+  box-shadow: 5px 5px 10px black;
+  h2 {
+    text-align: center;
+    font-family: $scriptFont;
+    text-shadow: 3px 3px 5px black;
+    color: black;
+    font-size: 4em;
+    padding-bottom: 20px;
+  }
+  p {
+    background: rgba(0, 0, 0, 0.685);
+    text-align: center;
+    color: white;
+    font-family: $pFont;
+    font-size: 1.4em;
+    padding: 10px;
+    font-weight: 700;
+    text-shadow: 2px 2px 3px black;
+  }
+  li {
+    color: white;
+  }
+  ul {
+    background: rgba(0, 0, 0, 0.685);
+    padding: 16px;
+    border-radius: 5%;
+  }
+}
+
+.equipment {
+  margin-top: 200px;
+  background-color: rgba(0, 0, 0, 0.685);
+  padding: 10px;
+  border-radius: 5%;
+  box-shadow: 5px 5px 10px black;
+}
+
+.resources,
+.equipment,
+.updates,
+.footer {
+  h2 {
+    text-align: center;
+    font-family: $scriptFont;
+    text-shadow: 3px 3px 5px black;
+    color: white;
+    font-size: 3em;
+    padding-bottom: 20px;
+  }
+}
+
+.tools a,
+.resources a {
+  font-size: 20px;
   color: white;
+  text-shadow: 2px 2px 2px black;
+  font-weight: 700;
+}
+
+.tools a:hover,
+.resources a:hover {
+  text-decoration: none;
+  color: rgb(115, 1, 168);
+  font-weight: 700;
+}
+
+.part {
+  font-weight: 700;
+  color: rgb(115, 1, 168);
 }
 
 .news,
-.tools,
 .equipment,
 .resources,
 .updates p {
   color: white;
   font-family: $pFont;
   font-size: 1.2em;
+  li {
+    color: rgb(153, 153, 153);
+  }
+  ul {
+    background: rgba(0, 0, 0, 0.685);
+    padding: 16px;
+  }
 }
 
 // Construction piece goes here
@@ -164,39 +250,86 @@ button:focus {
 }
 
 .updates {
+  margin-top: 200px;
   padding-bottom: 20px;
   color: white;
   flex-basis: 100%;
-  background: $bgColor;
+  padding: 10px;
   img {
-    float: right;
+    margin: auto;
+    display: block;
+    box-shadow: 5px 5px 10px black;
+  }
+  p {
+    padding: 10px;
+    border-radius: 5%;
+    background: rgba(0, 0, 0, 0.685);
+    box-shadow: 5px 5px 10px black;
   }
 }
 
 // Footer starts here
 .footer {
+  background: rgba(128, 128, 128, 0.616);
+  margin-top: 200px;
   min-height: 100px;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 2.2em;
   padding-top: 3em;
   justify-content: center;
+  ul {
+    margin-top: 50px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  p {
+    font-size: 20px;
+    font-family: $pFont;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+  }
+  a {
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+  }
+  a:hover {
+    color: #d5d5d5;
+    text-decoration: none;
+  }
 }
 
 .fa-facebook {
+  font-size: 50px;
   color: #3b5998;
 }
 
 .fa-instagram {
+  font-size: 50px;
   color: #517fa8;
 }
 
 .fa-youtube {
+  font-size: 50px;
   color: #bb0000;
 }
 
 .fa-linkedin {
+  font-size: 50px;
   color: #030303;
 }
 

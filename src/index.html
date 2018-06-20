@@ -22,140 +22,200 @@
 </head>
 
 <body>
+  <video plays-inline autoplay muted loop id="bgvid">
+    <source src="http://afkdeveloper.com/videos/header-video-new.mp4" type="video/mp4">
+  </video>
   <div id="wrapper" class="container">
     <!-- HEADER GOES HERE -->
-    <div id="header">
-      <h1 id="brand-name">
-        <a href="http://afkdeveloper.com">Christian Martins</a>
-      </h1>
-      <!-- NAVBAR HERE INSIDE HEADER! -->
-      <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
-            <ul class="nav-links">
-              <li class="nav-item hvr-float-shadow">
-                <a href="#">Home</a>
-              </li>
-              <li class="nav-item hvr-float-shadow">
-                <a href="mau5page/index.html">Mau5-Page</a>
-              </li>
-              <li class="nav-item hvr-float-shadow">
-                <a href="#">About</a>
-              </li>
-              <li class="nav-item hvr-float-shadow">
-                <a href="#">Contact</a>
-              </li>
-            </ul>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- <div class="col-md-12"> -->
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle hvr-wobble-vertical" data-toggle="collapse" data-target="#myNavbar">
+                <i class="far fa-caret-square-down fa-2x"></i>
+              </button>
+              <a style="font-size:30px;" class="navbar-brand" href="#">AFK DeVeloper</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav nav-links">
+                <li class="active">
+                  <a class="hvr-bounce-out" href="http://afkdeveloper.com">Home</a>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle hvr-bounce-out" data-toggle="dropdown" href="#">Projects
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a style="color:white;" class="hvr-bounce-out" href="#">Wiki Search</a>
+                    </li>
+                    <li>
+                      <a style="color:white;" class="hvr-bounce-out" href="#">Technical Doc Page</a>
+                    </li>
+                    <li>
+                      <a style="color:white;" class="hvr-bounce-out" href="#">Mau5 Site</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="hvr-bounce-out" href="#">Blog</a>
+                </li>
+                <li>
+                  <a class="hvr-bounce-out" href="#contact">Contact Me</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <nav class="navbar navbar-dark bg-dark">
-          <button class="btn btn-lg btn-block navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">
-              <i class="fas fa-bars hvr-icon-bounce"></i>
-            </span>
-          </button>
         </nav>
       </div>
     </div>
-    <!-- END OF HEADER -->
+    <div id="header">
+      <!-- NAVBAR HERE INSIDE HEADER! -->
+      <!-- END OF HEADER -->
 
-    <!-- BEGINNING OF MAIN -->
-    <!-- Introduction Here -->
-    <div class="intro-container">
-        <video playsinline autoplay muted loop id="bgvid">
-            <source src="http://afkdeveloper.com/blog/wp-content/uploads/2018/06/Main-Header-1.mp4" type="video/mp4">
-              <div class="overlay">
-                  <h1>Heading</h1>
-                  <p>Lorem ipsum...</p>
-                  <!-- Use a button to pause/play the video with JavaScript -->
-                  <button id="myBtn" onclick="myFunction()">Pause</button>
-                </div> 
-        </video>
-        
-    </div>
-    <!-- Column 1 -->
-    <div class="content">
-      <div class="news">
-          <img src="http://afkdeveloper.com/images/me-circle.png">
-        <h2>Christian Martins</h2>
-        <p>My name is Christian Martins, I am a 32 year old restaurant manager and I am from South Florida. I am currently enrolled in Palm Beach Code School where I will learn a Full Stack for a career as a Web Developer. My true passion has always been computers and coding. I've always liked to code and make sites do different things. The end result is very rewarding for me, and I can't wait to provide a service and make this my career.</p>
-        <p>I'm a simple guy who likes to build things and solve problems. This coding thing is right up my alley, I can't believe its taken me so long to do something about it. My blog will be up soon, with articles about me and my journey to become a web developer.</p>
-      </div>
+      <!-- BEGINNING OF MAIN -->
+      <!-- Column 1 -->
+      <div class="content">
+        <div class="news">
+          <img src="http://afkdeveloper.com/images/main-about.png">
+          <h2>Christian Martins</h2>
+          <p>My name is Christian Martins, I am a 32 year old restaurant manager and I am from South Florida. I am currently
+            enrolled in Palm Beach Code School where I will learn a Full Stack for a career as a Web Developer. My true passion
+            has always been computers and coding. I've always been interested in coding and I spend a lot of my free time
+            learning and trying new things out.
+            <br>
+        </div>
 
-      <!-- Column 2 -->
-      <div class="resources">
-        <h2>Projects</h2>
-        <p>Check out my completed <a href="#">Projects Here</a>.</p>
-        <p>Some of the sites I've used to learn so far are:</p>
-        <ul>
-          <li><a href="https://learn.freecodecamp.org/">Free Code Camp</a></li>
-          <li><a href="https://www.pluralsight.com/learn?gclid=CjwKCAjwsJ3ZBRBJEiwAtuvtlPL6zHyxWKciEqJ4jbdlp62h8VdhCe_0UYoazUYg0Pd37ylE1TuBaBoCwDsQAvD_BwE&utm_term=&aid=701j0000002BGi3AAG&promo=&oid=&utm_source=branded&utm_medium=digital_paid_search_google&utm_campaign=US_Brand_E&utm_content=&s_kwcid=AL!5668!3!251200749970!e!!g!!pluralsight&ef_id=Wyg9aQAAANF6ywNC:20180619043646:s">PluralSight</a></li>
-          <li><a href="https://developer.mozilla.org/en-US/">MDN web docs</a></li>
-          <li><a href="https://www.w3schools.com/">w3schools.com</a></li>
-        </ul>
-      </div>
-      <!-- Beginning of Equipment and software section -->
-      <div class="tools">
-        <h2>Tools</h2>
-        <p>Some of my favorite software and editing tools so far include:</p> 
-        <ul>
-          <li><a href="#">VsCode for my editor</a></li>
-          <li><a href="#">Git Bash</a></li>
-          <li><a href="#">GitHub Desktop application</a></li>
-          <li><a href="#">Gulp is my task runner</a></li>
-          <li><a href="#">npm for my package manager</a></li>
-          <li><a href="#">Adobe Photoshop for image editing</a></li>
-          <li><a href="#">Lightworks for my video editing</a></li>
-          <li><a href="#">Handbrake for compressing my video files</a></li>
-          <li><a href="#">Koala is my pre processor</a></li>
-        </ul> 
-      </div>
-      <div class="equipment">
-        <h2>HardWare</h2>
-        <p>I use my HP Omen 15 Laptop for my more aggressive editing and gaming, because it is fast than my desktop at the moment. This thing is pretty speedy:</p>
-        <ul>
-          <li>Chipset: Intel® HM175</li>
-          <li>Hard drive: Hard drive</li>
-          <li>Processor: 7th Generation Intel® Core™ i7-7700HQ processor (2b) ; Quad-Core</li>
-          <li>OS: Windows 10 Home</li>
-          <li>GPU: NVIDIA GeForce GTX 1050 Ti</li>
-          <li>RAM: 16 GB</li>
-          <li>Memory Speed: 2400 MHz</li>
-          <li>Screen: 15.6 inches</li>
-          <li>SSD: 128GB</li>
-          <li>Drive Speed: 7200 RPM</li>
-        </ul>
-      </div>
-      <!-- End of Main Grid System -->
-    </div>
-    <!-- Description of maintenance on site section -->
-    <div class="content2">
-      <div class="updates">
-        <img src="http://icons.iconarchive.com/icons/proycontec/construction/96/screen-settings-icon.png" alt="Construction">
-        <h3>Responsive Design</h3>
-        <p>AFK Developer is currently being remodeled to enhance the sites responsive capabilities using mobile first. This
-          site is also my sandbox as I grow in the web development field. I will be improving this site very often.</p>
-      </div>
-    </div>
-    
-      <!-- Footer starts here -->
-      <div class="footer">
-        <a href="mailto:christian@afkdeveloper.com">
-          <i class="fas fa-at"></i>
-        </a>
-        <a href="https://www.facebook.com/christian.martins.906">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://www.youtube.com/channel/UCD8qaJl1dEVQMouPaW1XxVQ?view_as=subscriber">
-          <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/christian-martins-65b393a9/">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://www.instagram.com/christianz_world/?hl=en">
-          <i class="fab fa-instagram"></i>
-        </a>
+        <!-- Column 2 -->
+        <div class="resources" id="projects">
+          <h2>Projects</h2>
+          <p>Check out my completed
+            <a class="hvr-buzz" href="#">Projects Here</a>.</p>
+          <p>Some of the sites I've used to learn so far are:</p>
+          <ul>
+            <li>
+              <a class="hvr-buzz" href="https://learn.freecodecamp.org/">Free Code Camp</a>
+            </li>
+            <li>
+              <a class="hvr-buzz" href="https://www.pluralsight.com/learn?gclid=CjwKCAjwsJ3ZBRBJEiwAtuvtlPL6zHyxWKciEqJ4jbdlp62h8VdhCe_0UYoazUYg0Pd37ylE1TuBaBoCwDsQAvD_BwE&utm_term=&aid=701j0000002BGi3AAG&promo=&oid=&utm_source=branded&utm_medium=digital_paid_search_google&utm_campaign=US_Brand_E&utm_content=&s_kwcid=AL!5668!3!251200749970!e!!g!!pluralsight&ef_id=Wyg9aQAAANF6ywNC:20180619043646:s">PluralSight</a>
+            </li>
+            <li>
+              <a class="hvr-buzz" href="https://developer.mozilla.org/en-US/">MDN web docs</a>
+            </li>
+            <li>
+              <a class="hvr-buzz" href="https://www.w3schools.com/">w3schools.com</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Beginning of Equipment and software section -->
+        <div class="tools">
+          <h2>Tools</h2>
+          <p>Some of my favorite software and editing tools so far include:</p>
+          <ul>
+            <li>
+              <a class="hvr-buzz" href="https://code.visualstudio.com/download">VsCode for my editor</a>
+            </li>
+            <li>
+              <a class="hvr-buzz" href="https://git-scm.com/downloads">Git Bash</a>
+            </li>
+            <li>
+              <a class="hvr-buzz" href="https://desktop.github.com/">GitHub Desktop application</a>
+            </li>
+            <li>
+              <a class="hvr-buzz" href="https://gulpjs.com/">Gulp is my task runner</a>
+            </li>
+            <li>
+              <a class="hvr-buzz" href="https://www.npmjs.com/">npm for my package manager</a>
+            </li>
+            <li>
+              <a class="hvr-buzz" href="https://www.adobe.com/products/photoshop.html?promoid=MLR7SFRV&mv=other">Adobe Photoshop for image editing</a>
+            </li>
+            <li>
+              <a class="hvr-buzz" href="https://www.lwks.com/index.php?option=com_lwks&view=download&Itemid=206">Lightworks for my video editing</a>
+            </li>
+            <li>
+              <a class="hvr-buzz" href="https://handbrake.fr/">Handbrake for compressing my video files</a>
+            </li>
+            <li>
+              <a class="hvr-buzz" href="http://koala-app.com/">Koala is my pre processor</a>
+            </li>
+          </ul>
+        </div>
+        <div class="equipment">
+          <h2>HardWare</h2>
+          <p>I use my HP Omen 15 Laptop for my more aggressive editing and gaming, because it is fast than my desktop at the
+            moment. This thing is pretty speedy:</p>
+          <ul>
+            <li>
+              <span class="part">Chipset:</span> Intel® HM175</li>
+            <li>
+              <span class="part">Hard Drive:</span> 1 TB 7200 RPM SATA hard drive</li>
+            <li>
+              <span class="part">Processor:</span> 7th Generation Intel® Core™ i7-7700HQ processor Quad-Core</li>
+            <li>
+              <span class="part">OS:</span> Windows 10 Home</li>
+            <li>
+              <span class="part">GPU:</span> NVIDIA GeForce GTX 1050 Ti</li>
+            <li>
+              <span class="part">RAM:</span> 16 GB</li>
+            <li>
+              <span class="part">Memory Speed:</span> 2400 MHz</li>
+            <li>
+              <span class="part">Screen:</span> 15.6 inches</li>
+            <li>
+              <span class="part">SSD:</span> 128GB</li>
+            <li>
+              <span class="part">Drive Speed:</span> 7200 RPM</li>
+          </ul>
+          <!-- End of Main Grid System -->
+        </div>
+        <!-- Blog Coming Soon, and Contact Section Here -->
+        <div class="content2">
+          <div class="updates">
+            <img src="http://afkdeveloper.com/images/main/blog.jpg">
+            <h2>Blog Coming Soon!</h2>
+            <p>Stay tuned for my Blog Page coming soon. My blog will be created with WordPress. I am going to have a section
+              for Travel, Coding, Food, Random, and Lifestyle. I am also going to track my progress as I go through code
+              school and share my story with you guys. I'll have a ton of pictures and videos from my upcoming trip to Italy
+              as well. I'm on a serious budget for this vacation so tune in for tips on how to have a good time in Europe
+              on a budget.</p>
+          </div>
+        </div>
+
+        <!-- Footer starts here -->
+        <div class="footer" id="contact">
+          <h2>Get in Touch With Me</h2>
+          <p>Email:
+            <a class="hvr-pulse" href="mailto:christian@afkdeveloper.com">christian@afkdeveloper.com</a>
+          </p>
+          <p>Phone:
+            <a class="hvr-pulse" href="tel:+15618593597">561-859-3597</a>
+          </p>
+          <ul>
+            <li>
+              <a class="hvr-pulse" href="https://www.facebook.com/christian.martins.906">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a class="hvr-pulse" href="https://www.youtube.com/channel/UCD8qaJl1dEVQMouPaW1XxVQ?view_as=subscriber">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a class="hvr-pulse" href="https://www.linkedin.com/in/christian-martins-65b393a9/">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a class="hvr-pulse" href="https://www.instagram.com/christianz_world/?hl=en">
+                <i class="fab fa-instagram"></i>
+          </ul>
+          </a>
+          </li>
+        </div>
       </div>
     </div>
   </div>
